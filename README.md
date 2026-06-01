@@ -1,73 +1,40 @@
-# React + TypeScript + Vite
+# Frontend Components Lab
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Laboratorio de componentes frontend reutilizables inspirados en interfaces administrativas reales.
 
-Currently, two official plugins are available:
+Este proyecto reúne componentes creados con React, TypeScript y Chakra UI, enfocados en dashboards, gestión de usuarios, tablas, formularios y acciones administrativas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tecnologías
 
-## React Compiler
+- React
+- TypeScript
+- Chakra UI
+- Vite
+- Git y GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Componentes incluidos
 
-## Expanding the ESLint configuration
+- ActionMenu
+- DataTable
+- StatusBadge
+- DashboardExample
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📌 Objetivo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Practicar y documentar componentes reutilizables para aplicaciones administrativas, manteniendo una arquitectura clara, limpia y fácil de escalar.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧠 Aprendizajes aplicados
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Separación de componentes
+- Reutilización de estilos
+- Manejo de props
+- Renderizado condicional
+- Acciones en tablas
+- Formularios reutilizables
+- Buenas prácticas con TypeScript
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ▶️ Cómo ejecutar el proyecto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+npm install
+npm run dev
